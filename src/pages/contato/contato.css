@@ -1,0 +1,221 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+
+}
+
+h1 {
+    margin-left: 25px;
+    font-size: 35px;
+    padding: 5px;
+}
+
+h4 {
+    border: solid 1px white;
+    border-radius: 6px;
+    margin-right: 25px;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h4:hover {
+    color: rgb(79, 79, 79);
+}
+
+.voltar {
+    display: none;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+}
+
+.voltar h3 {
+    padding: 0px 100px;
+    background: black;
+    color: white;
+    border: solid 1px white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .voltar {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    .main {
+        height: auto;
+    }
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
+.enviar {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    /* transparência */
+    backdrop-filter: blur(10px);
+    /* efeito vidro */
+    -webkit-backdrop-filter: blur(10px);
+    /* suporte Safari */
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.enviar h2 {
+    padding: 10px 0px;
+    margin-left: 5%;
+    font-size: 35px;
+
+}
+
+.enviar input {
+    padding: 5px 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 9px;
+    outline: none;
+    border: 1px solid rgba(198, 196, 196, 0.33);
+    border-radius: 3px;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    font-size: 15px;
+}
+
+.enviar textarea {
+    padding: 5px 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 9px;
+    outline: none;
+    border: 1px solid rgba(198, 196, 196, 0.361);
+    border-radius: 3px;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    height: 300px;
+}
+
+.enviar textarea:focus {
+    border: solid 1px white;
+    box-shadow: 0 10px 20px rgba(213, 210, 255, 0.2);
+
+}
+
+.enviar input:focus {
+    border: solid 1px white;
+    box-shadow: 0 10px 20px rgba(213, 210, 255, 0.2);
+
+}
+
+button {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    padding: 9px 35px;
+    margin-bottom: 9px;
+    cursor: pointer;
+
+}
+
+.redes {
+    flex: 50%;
+
+    margin-top: 80px;
+    padding: 0px 15px;
+    border-top: solid 1px white;
+    border-left: 1px solid white;
+}
+
+.redes h2 {
+    font-size: 35px;
+}
+
+.redes p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.redes span {
+    font-size: 45px;
+    margin-right: 8px;
+}
+
+.linkedinn:hover {
+    color: blue;
+
+}
+
+.git:hover {
+    color: red;
+}
+
+.zapp:hover {
+    color: green;
+}
+
+.ggmail:hover {
+    color: rgb(255, 191, 0);
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: solid 5px var(--vidro);
+}
+
+footer p {
+    padding: 0px 5px 0px 5px;
+}
