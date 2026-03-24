@@ -17,24 +17,32 @@ function Home() {
             <div className='header'>
                 <p className='tituloo'> portfólio</p>
                 <ul>
-                    <li><a className='homee' href='#Home'>Home</a></li>
-                    <li><a className='sobreminn' href='#sobremin'>Sobre min</a></li>
-                    <li><a className='projetoo' href='#projetos'>Projetos</a></li>
-                    <li><Link className='link' to="/contato"><a>Contato</a></Link></li>
+                    <li><a className='homee' onClick={() =>
+                        document.getElementById("Home").scrollIntoView({ behavior: "smooth" })
+                    }>Home</a></li>
+                    <li><a className='sobreminn' onClick={() =>
+                        document.getElementById("sobremin").scrollIntoView({ behavior: "smooth" })
+                    }>Sobre min</a></li>
+                    <li><a className='projetoo' onClick={() =>
+                        document.getElementById("projetos").scrollIntoView({ behavior: "smooth" })
+                    }>Projetos</a></li>
+                    <li><Link className='link' to="/contato" rel="noopener noreferrer">Contato</Link></li>
                 </ul>
             </div>
-            <main id='Home'>
 
+            <main id='Home'>
 
                 <img className='logo' src={foto} alt="Minha foto" />
                 <h1>Werther Crisley</h1>
                 <h2>Desenvolvedor <span>Front-End</span></h2>
                 <div className='itemlinkedin'>
-                    <h5><span className='linkedin'><i class="bi bi-linkedin"></i></span>
-                        <span className='github'><i class="bi bi-github"></i></span>
+                    <span className='linkedin'><a href="https://www.linkedin.com/in/werther-crisley-58aba73b9/" target='_blank' rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></span>
+                    <span className='github'><a href="https://github.com/WertherCrisley" target='_blank' rel="noopener noreferrer"><i class="bi bi-github"></i></a></span>
+                    {/* <span className='zap'><a href="https://wa.me/5585988800053" target='_blank' rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a></span>
+                    <span className='email'><a href="mailto:werthercr7@gmail.com" target='_blank' rel="noopener noreferrer"><i class="bi bi-envelope-at-fill"></i></a></span> */}
 
-
-                    </h5></div></main>
+                </div>
+            </main>
 
             <div id='sobremin' className='sobremin'>
                 <h2>Sobre min</h2>
@@ -46,7 +54,7 @@ function Home() {
             <div id='projetos' className='PaiProjetos'><h2>Projetos</h2>
                 <div className='grid'>
                     <div className='projetos'>
-                        <a href="https://werthercrisley.github.io/Sitedelivery/" target='_blanck'>
+                        <a href="https://werthercrisley.github.io/Sitedelivery/" target='_blank' rel="noopener noreferrer">
                             <img src={projeto} />
                             <h3>Site Delivery</h3>
                             <p>Esse projeto foi feito usando html css e java script, com o objetivo de ser u site de delivery, simples e eficaz!!</p>
@@ -54,7 +62,7 @@ function Home() {
                     </div>
 
                     <div className='projetos'>
-                        <a href="https://werthercrisley.github.io/C-pia-mercado-livre/" target='_blanck'>
+                        <a href="https://werthercrisley.github.io/C-pia-mercado-livre/" target='_blank' rel="noopener noreferrer">
                             <img src={projeto2} />
                             <h3>Cópia do Mercado Livre</h3>
                             <p>Esse projeto foi feito usando html css e java script junto de reacs</p></a>
@@ -62,7 +70,7 @@ function Home() {
 
 
                     <div className='projetos'>
-                        <a href="https://werthercrisley.github.io/MeutopJogos/" target='_blanck'>
+                        <a href="https://werthercrisley.github.io/MeutopJogos/" target='_blank' rel="noopener noreferrer">
                             <img src={projeto3} />
                             <h3>Meu Top Jogos</h3>
                             <p>Esse projeto foi feito usando html css e java script junto de reacs</p></a>
