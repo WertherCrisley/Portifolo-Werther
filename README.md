@@ -4,12 +4,9 @@ Meu portfólio desenvolvido com React para apresentar meus projetos, habilidades
 
 📸 Preview
 
-
-
-
 🌍 Acesse o projeto
 
-👉 (coloque aqui o link quando publicar)
+👉 (https://werthercrisley.github.io/Portifolo-Werther/#/)
 
 🧠 Tecnologias
 
@@ -22,3 +19,5 @@ CSS
 HTML
 
 Vite
+
+git
